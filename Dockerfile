@@ -1,6 +1,6 @@
 FROM tomcat:8.0-alpine
 
-ADD dist/OnlineShoppingSystem.war OnlineShoppingSystem.war
+ADD dist/OnlineShoppingSystem.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
