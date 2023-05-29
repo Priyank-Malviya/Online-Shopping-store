@@ -1,7 +1,7 @@
-FROM openjdk:8
-
-EXPOSE 9001
+FROM tomcat:8.0-apline
 
 ADD dist/OnlineShoppingSystem.war OnlineShoppingSystem.war
 
-ENTRYPOINT [ "JAVA","-war","/OnlineShoppingSystem.war -server.port=9001" ]
+EXPOSE 8080
+
+CMD ["catalina.sh","run"]
