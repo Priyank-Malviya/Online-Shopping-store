@@ -1,4 +1,4 @@
-FROM tomcat:8.0-apline
+FROM tomcat:8.0-alpine
 
 ADD dist/OnlineShoppingSystem.war OnlineShoppingSystem.war
 
